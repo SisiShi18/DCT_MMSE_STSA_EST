@@ -1,6 +1,6 @@
 # DCT_MMSE_STSA_EST
 
-Complete script for implementing the DCT-based MMSE spectral amplitude estimators.
+Here contains the script for implementing the DCT-based MMSE spectral amplitude estimators.
 Output of the program:
 1. Spectrograms of enhanced speech using different methods, saved in the 'figs' folder
 2. Enhanced speech wave files saved in the 'audios' folder.
