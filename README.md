@@ -45,9 +45,9 @@ NBLB : Non-linear bilateral gain estimator (DCT)
 
 'NBLG laplacian', [5] ,
 
-'Wiener filter',(DCT), [8] ,
+'Wiener filter', (DCT), [8] ,
 
-'Wiener filter + SPU'(DCT) [8] .
+'Wiener filter + SPU' (DCT) [8] .
 
 Two tests:
 
