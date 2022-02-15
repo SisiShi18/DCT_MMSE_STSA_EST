@@ -8,11 +8,17 @@ Output of the program:
 The following methods are included:
 
 FSA: DFT short-time Spectral Amplidue Estimator
+
 CSA: DCT short-time Spectral Amplidue Estimator (Proposed)
+
 CSC : DCT short-time Spectral Coefficient Estimator
+
 CSC normal : also called Wiener filter, using Guassian PDF
+
 LBLG: Linear bilateral gain estimator (DCT)
+
 LBLG normal : or dual gain Wiener filter, using Gaussian PDF (DGW)
+
 NBLB : Non-linear bilateral gain estimator (DCT)
 
 'FSA normal', [1],
