@@ -6,7 +6,7 @@ Output of the program:
 2. Enhanced speech wave files saved in the 'audios' folder.
 
 The following methods are included:
-
+----------------------------------------------------------------------------------------------
 FSA: DFT short-time Spectral Amplidue Estimator
 
 CSA: DCT short-time Spectral Amplidue Estimator (Proposed)
@@ -20,6 +20,8 @@ LBLG: Linear bilateral gain estimator (DCT)
 LBLG normal : or dual gain Wiener filter, using Gaussian PDF (DGW)
 
 NBLB : Non-linear bilateral gain estimator (DCT)
+
+---------------------------------------------------------------------------------------------
 
 'FSA normal', [1],
 
