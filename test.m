@@ -3,8 +3,7 @@
 %   Output enhanced speech files in the audios folder.
 %   Output plots of objective quality measures in the fig folder.
 % %--------------------------------------------------------------------------
-clear all; close all;
-clc;
+clear all; close all; clc;
 %--------------------------------------------------------------------------
 %%                          Progress indication
 %--------------------------------------------------------------------------
@@ -23,7 +22,8 @@ LUT_dir = [exp_dir 'gain_LUT' filesep];
 %%                    Create clean and noise file paths
 %--------------------------------------------------------------------------
 clean_files = dir([aud_dir 'clean' filesep '*.wav']); % path to clean speech test files.
-noise_files = dir([aud_dir 'noise' filesep '*.wav']); % path to noise test files.
+noise_files = dir([aud_dir 'noise_babble' filesep '*.wav']); % path to noise test files.
+% noise_files = dir([aud_dir 'noise_F_16' filesep '*.wav']); % path to noise test files.
 %--------------------------------------------------------------------------
 %%                           Define Globals
 %--------------------------------------------------------------------------
@@ -79,8 +79,10 @@ myfun = {@CSA_MMSE_t, @FSA_MMSE_t, @CSA_MMSE_SPU_t, @FSA_MMSE_SPU_t, ...
 %--------------------------------------------------------------------------
 %%                  Define experiment parameter index
 plot_spect = true;
+
 spu =  'spu_'; % uncomment this for SPU weighting 
 % spu = ''; % uncomment this 
+
 if ~strcmp(spu,'spu_')
     %     methods = {'Unprocessed','FSA normal','FSA laplace',...
     %         'Wiener','CSC laplace','DGW','NBLG',...
@@ -211,7 +213,7 @@ for ww = 1:WW %length(synWinType)
                 noise_no = noise_type(nn);
                 
                 [noise_init, ~] = audioread([noise_files.folder,...
-                    '/', noise_files.name]); % noise waveform.
+                    filesep, noise_files.name]); % noise waveform.
                 
                 plt.noise_name = get_noise_name(noise_no);
                 output(ss).noise(nn).noise_name = plt.noise_name;
@@ -219,7 +221,6 @@ for ww = 1:WW %length(synWinType)
                 
                 %% Read clean speech signal
                 [clean, Fs] = audioread([clean_files(1).folder, filesep, clean_files(1).name]); % clean waveform.
-                %                     clean(clean == 0) = eps;
                 
                 output(ss).noise(nn).audio.clean = clean;
                 
@@ -344,7 +345,7 @@ if plot_spect == 1
             end
         end
     end
-    %     end
+
     save_name = strcat('spect_MMSE_compare_', plt.noise_name,'_',num2str(plt.SNR_arr(1)),'_dB','.eps');
     
     print('-depsc', '-r600',sprintf(strcat(plt.save_dir,save_name)));
