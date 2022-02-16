@@ -121,7 +121,7 @@ switch xi_type
              %% update/estimate the noise spectrum using VAD algorithm or noise-estimation alghorithm
              switch speech_priori
                  case {'norm','normal','gaussian'}
-                    gain = stsa_dft_n(xi,gamma_k);
+                    gain = FSA_n(xi,gamma_k);
                     
                  case {'lap','laplace','laplacian'}
                      
