@@ -97,6 +97,7 @@ switch xi_type
                 alpha1 = 0.98;
                 qk1 = 0.3;
             case {'lap','laplace','laplacian'}
+%                 xi_min = 10^(-32/10);
                 alpha2 = 0.92;
                 qk2 = 0.2;
             case {'gamma'}
