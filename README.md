@@ -40,7 +40,7 @@ Abbreviations:
 
 'CSC normal', also called DCT 'Wiener filter', using Guassian PDF [8] ,
 
-'CSC normal + SPU', or DCT 'Wiener filter + SPU' (DCT) [8] .
+'CSC normal + SPU', or DCT 'Wiener filter + SPU' [8] .
 
 'CSC laplacian', [7] ,
 
