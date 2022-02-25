@@ -14,8 +14,6 @@ Abbreviations:
 
 * CSC : DCT short-time Spectral Coefficient Estimator
 
-* CSC normal : also called Wiener filter, using Guassian PDF
-
 * LBLG: DCT Linear bilateral gain estimator
 
 * NBLB : DCT Non-linear bilateral gain estimator
@@ -40,6 +38,10 @@ Abbreviations:
 
 'CSA gamma+SPU', proposed ,
 
+'CSC normal', also called DCT 'Wiener filter', using Guassian PDF [8] ,
+
+'CSC normal + SPU', or DCT 'Wiener filter + SPU' (DCT) [8] .
+
 'CSC laplacian', [7] ,
 
 'CSC laplacian + SPU', [7] ,
@@ -50,11 +52,8 @@ Abbreviations:
 
 'NBLG normal', or DCT dual gain Wiener filter, using Gaussian PDF (DGW) [4] ,
 
-'NBLG laplacian', [5] ,
+'NBLG laplacian', [5] .
 
-'Wiener filter', (DCT), [8] ,
-
-'Wiener filter + SPU' (DCT) [8] .
 
 Two tests:
 
