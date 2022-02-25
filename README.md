@@ -10,7 +10,7 @@ The following methods are included:
 Abbreviations: 
 * FSA: DFT short-time Spectral Amplidue Estimator
 
-* CSA: DCT short-time Spectral Amplidue Estimator (Proposed)
+* CSA: DCT short-time Spectral Amplidue Estimator (**Proposed**)
 
 * CSC : DCT short-time Spectral Coefficient Estimator
 
@@ -26,17 +26,17 @@ Abbreviations:
 
 'FSA laplacian', [2],
             
-'CSA normal', proposed ,
+'CSA normal', **proposed** ,
 
-'CSA laplacian', proposed ,
+'CSA laplacian', **proposed** ,
 
-'CSA gamma', proposed ,
+'CSA gamma', **proposed** ,
 
-'CSA normal+SPU', proposed , 
+'CSA normal+SPU', **proposed** , 
 
-'CSA laplacian+SPU', proposed ,
+'CSA laplacian+SPU', **proposed** ,
 
-'CSA gamma+SPU', proposed ,
+'CSA gamma+SPU', **proposed** ,
 
 'CSC normal', also called DCT 'Wiener filter', using Guassian PDF [8] ,
 
@@ -55,7 +55,7 @@ Abbreviations:
 'NBLG laplacian', [5] .
 
 
-Two tests:
+**Two tests**:
 
 1.  The noise psd is estimated as the power of short-time amplitude : |N|^2 
     
