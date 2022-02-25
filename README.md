@@ -22,6 +22,8 @@ Abbreviations:
 
 'FSA normal', [1],
 
+'FSA normal+SPU', [1] ,
+
 'FSA laplacian', [2],
             
 'CSA normal', proposed ,
@@ -29,8 +31,6 @@ Abbreviations:
 'CSA laplacian', proposed ,
 
 'CSA gamma', proposed ,
-
-'FSA normal+SPU', [1] ,
 
 'CSA normal+SPU', proposed , 
 
