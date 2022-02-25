@@ -50,7 +50,7 @@ Abbreviations:
 
 'LBLG laplacian', [5] ,
 
-'NBLG normal', or DCT dual gain Wiener filter, using Gaussian PDF (DGW) [4] ,
+'NBLG normal', or DCT dual gain Wiener filter (DGW), using Gaussian PDF [4] ,
 
 'NBLG laplacian', [5] .
 
