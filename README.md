@@ -7,6 +7,7 @@ Output of the program:
 
 The following methods are included:
 ----------------------------------------------------------------------------------------------
+Abbreviations: 
 * FSA: DFT short-time Spectral Amplidue Estimator
 
 * CSA: DCT short-time Spectral Amplidue Estimator (Proposed)
